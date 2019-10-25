@@ -34,7 +34,7 @@ pipeline {
 	}
 	stage('deploy'){
 		steps{
-			sh 'docker run -dit -p 8080:8081 -name $app $image_tag'
+			sh 'docker run -dit -p 8080:8081 --name $app $image_tag'
 		}
 	}
 	stage('Clean_up'){
