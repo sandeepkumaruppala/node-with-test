@@ -1,4 +1,4 @@
-FROM node:8.6.0-alpine
+FROM node:13.0.1-alpine
 
 RUN apk add --no-cache libc6-compat
 
