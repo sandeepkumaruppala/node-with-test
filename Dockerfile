@@ -1,8 +1,6 @@
-FROM node:13.0.1-alpine
+FROM node:8-alpine
 
-RUN apk add --no-cache libc6-compat
-
-RUN mkdir -p /app
+RUN apk add --no-cache libc6-compat && mkdir -p /app
 
 WORKDIR /app
 
